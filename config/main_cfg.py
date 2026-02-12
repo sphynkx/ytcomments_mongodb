@@ -7,7 +7,7 @@ load_dotenv()
 class Config:
     def __init__(self):
         self.YTCOMMENTS_HOST = os.getenv("YTCOMMENTS_HOST", "0.0.0.0")
-        self.YTCOMMENTS_PORT = int(os.getenv("YTCOMMENTS_PORT", "9093"))
+        self.YTCOMMENTS_PORT = int(os.getenv("YTCOMMENTS_PORT", "19093"))
 
         self.MONGO_HOST = os.getenv("MONGO_HOST", "localhost")
         self.MONGO_PORT = int(os.getenv("MONGO_PORT", "27017"))

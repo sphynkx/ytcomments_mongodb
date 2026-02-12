@@ -1,3 +1,5 @@
+__Note__: Legacy/deprecated version!! See new [version](https://github.com/sphynkx/ytcomments) based on [CouchBase](https://www.couchbase.com/).
+
 YTComments is a supplemental service for [YurTube engine](https://github.com/sphynkx/yurtube) to communicate with MongoDB and 
 support comments functionality of main app. Service based on gRPC+protobuf.
 

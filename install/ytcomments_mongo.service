@@ -1,5 +1,5 @@
 [Unit]
-Description=YtComments gRPC Service
+Description=YtComments gRPC Service (legacy)
 After=network.target network-online.target mongod.service
 Wants=network-online.target
 Requires=mongod.service
@@ -11,15 +11,15 @@ StartLimitBurst=5
 Type=simple
 User=root
 Group=root
-WorkingDirectory=/opt/ytcomments
-ExecStart=/opt/ytcomments/.venv/bin/python main.py
+WorkingDirectory=/opt/ytcomments_mongodb
+ExecStart=/opt/ytcomments_mongodb/.venv/bin/python main.py
 
 Restart=always
 RestartSec=5
 
 StandardOutput=journal
 StandardError=journal
-SyslogIdentifier=ytcomments
+SyslogIdentifier=ytcomments_mongodb
 Environment=PYTHONUNBUFFERED=1
 
 [Install]
